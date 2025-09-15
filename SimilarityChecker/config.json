@@ -1,0 +1,9 @@
+{
+  "pass_criteria": {
+    "similarity_threshold_histogram": 0.54
+  },
+  "debug": {
+    "dump_image_when_fail": true,
+    "force_dump_image": false
+  }
+}

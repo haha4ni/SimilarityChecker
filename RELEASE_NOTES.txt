@@ -1,0 +1,68 @@
+2025-08-08
+-------------------
+Module Versions:
+- ColorChecker          v0.0.1 - Initial release
+- SimilarityChecker     v0.0.1 - Initial release
+- SimilarityCheckerLive v0.0.1 - Initial release
+
+Changes:
+- Reorganized project structure: all Python files are now grouped into folders based on functionality.
+  - ColorChecker         : Checks color within predefined ROI.
+  - SimilarityChecker    : Checks similarity within predefined ROIs.
+  - SimilarityCheckerLive: Checks similarity within predefined ROIs using a USB camera as input source.
+
+
+2025-08-12
+-------------------
+Module Versions:
+- ColorChecker          v0.0.1
+- ColorCheckerLive      v0.0.1 - Initial release
+- SimilarityChecker     v0.0.1
+- SimilarityCheckerLive v0.0.2 - Updated
+
+Changes:
+- ColorCheckerLive: Checks color similarity within predefined ROIs using a USB camera as input source.
+- All live version of checkers are support saving camera configs when using SET ROI mode. And checker will apply it on USE ROI mode.
+
+
+2025-08-14
+-------------------
+Module Versions:
+- ColorChecker          v0.0.1
+- ColorCheckerLive      v0.0.2 - Updated
+- SimilarityChecker     v0.0.1
+- SimilarityCheckerLive v0.0.3 - Updated
+
+Changes:
+- Modularize camera management function
+- Add finding pattern feature for Live version app.
+- Show FPS information on screen.
+
+
+2025-08-18
+-------------------
+Module Versions:
+- ColorChecker          v0.0.1
+- ColorCheckerLive      v0.0.3 - Updated
+- SimilarityChecker     v0.0.1
+- SimilarityCheckerLive v0.0.4 - Updated
+
+Changes:
+- Change camera resolution to 1920x1080.
+- [SimilarityCheckerLive] Remove checking keypoint count when calculating score.
+- Add checking ROI keypoints at setting ROI phase. Hint will pop up if selected ROI is not pass.
+
+
+2025-08-20
+-------------------
+Module Versions:
+- ColorChecker          v0.0.1
+- ColorCheckerLive      v0.0.4 - Updated
+- SimilarityChecker     v0.0.1
+- SimilarityCheckerLive v0.0.5 - Updated
+
+Changes:
+- Support setting focus manually.
+- [SimilarityCheckerLive] Support using different scoring methods.
+- Use MSMF as camera backend and fix focus is not applied issue.
+

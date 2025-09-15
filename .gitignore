@@ -1,0 +1,13 @@
+exe_out
+*/__pycache__
+ColorChecker/logs
+ColorCheckerLive/assets/ref_img.bmp
+ColorCheckerLive/logs
+ColorCheckerLive/result_img_capture
+ColorCheckerLive/camera_settings.json
+SimilarityChecker/logs
+SimilarityChecker/fail_img_analysis
+SimilarityCheckerLive/assets/ref_img.bmp
+SimilarityCheckerLive/logs
+SimilarityCheckerLive/result_img_capture
+SimilarityCheckerLive/camera_settings.json

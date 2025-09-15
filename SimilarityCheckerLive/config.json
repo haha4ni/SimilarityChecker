@@ -1,0 +1,25 @@
+{
+  "pass_criteria": {
+    "similarity_threshold_histogram": 0.54
+  },
+  "roi": [
+    {
+      "rect": [
+        655,
+        183,
+        237,
+        277
+      ],
+      "label": "1"
+    },
+    {
+      "rect": [
+        320,
+        151,
+        209,
+        203
+      ],
+      "label": "2"
+    }
+  ]
+}
