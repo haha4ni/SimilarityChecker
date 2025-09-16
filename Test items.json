@@ -1,0 +1,239 @@
+[
+  {
+    "No": 1,
+    "Item": "turn off all LEDs",
+    "Commands": [
+      "factory-proto3 SetPWMLed NLP_R LOW",
+      "factory-proto3 SetPWMLed NLP_G LOW",
+      "factory-proto3 SetPWMLed NLP_B LOW",
+      "factory-proto3 SetPWMLed MWI_R LOW",
+      "factory-proto3 SetPWMLed MWI_G LOW",
+      "factory-proto3 SetPWMLed MWI_B LOW",
+      "factory-proto3 SetLed HF_R OFF",
+      "factory-proto3 SetLed HF_G OFF",
+      "factory-proto3 SetLed HF_B OFF",
+      "factory-proto3 SetLed HE_R OFF",
+      "factory-proto3 SetLed HE_G OFF",
+      "factory-proto3 SetLed HE_B OFF",
+      "factory-proto3 SetMuteLED CAP_R OFF",
+      "factory-proto3 SetMuteLED CAP_G OFF"
+    ]
+  },
+  {
+    "No": 2,
+    "Item": "",
+    "Commands": [
+      "factory-proto3 SetPWMLed MWI_R LOW"
+    ]
+  },
+  {
+    "No": 3,
+    "Item": "",
+    "Commands": [
+      "factory-proto3 SetPWMLed MWI_G LOW"
+    ]
+  },
+  {
+    "No": 4,
+    "Item": "",
+    "Commands": [
+      "factory-proto3 SetPWMLed MWI_B LOW"
+    ]
+  },
+  {
+    "No": 5,
+    "Item": "",
+    "Commands": [
+      "factory-proto3 SetPWMLed MWI_R MID"
+    ]
+  },
+  {
+    "No": 6,
+    "Item": "",
+    "Commands": [
+      "factory-proto3 SetPWMLed MWI_G MID"
+    ]
+  },
+  {
+    "No": 7,
+    "Item": "",
+    "Commands": [
+      "factory-proto3 SetPWMLed MWI_B MID"
+    ]
+  },
+  {
+    "No": 8,
+    "Item": "",
+    "Commands": [
+      "factory-proto3 SetPWMLed MWI_R HIGH"
+    ]
+  },
+  {
+    "No": 9,
+    "Item": "",
+    "Commands": [
+      "factory-proto3 SetPWMLed MWI_G HIGH"
+    ]
+  },
+  {
+    "No": 10,
+    "Item": "",
+    "Commands": [
+      "factory-proto3 SetPWMLed MWI_B HIGH"
+    ]
+  },
+  {
+    "No": 11,
+    "Item": "turn on NLP LED test",
+    "Commands": [
+      "factory-proto3 SetPWMLed NLP_R LOW"
+    ]
+  },
+  {
+    "No": 12,
+    "Item": "",
+    "Commands": [
+      "factory-proto3 SetPWMLed NLP_G LOW"
+    ]
+  },
+  {
+    "No": 13,
+    "Item": "",
+    "Commands": [
+      "factory-proto3 SetPWMLed NLP_B LOW"
+    ]
+  },
+  {
+    "No": 14,
+    "Item": "",
+    "Commands": [
+      "factory-proto3 SetPWMLed NLP_R MID"
+    ]
+  },
+  {
+    "No": 15,
+    "Item": "",
+    "Commands": [
+      "factory-proto3 SetPWMLed NLP_G MID"
+    ]
+  },
+  {
+    "No": 16,
+    "Item": "",
+    "Commands": [
+      "factory-proto3 SetPWMLed NLP_B MID"
+    ]
+  },
+  {
+    "No": 17,
+    "Item": "",
+    "Commands": [
+      "factory-proto3 SetPWMLed NLP_R HIGH"
+    ]
+  },
+  {
+    "No": 18,
+    "Item": "",
+    "Commands": [
+      "factory-proto3 SetPWMLed NLP_G HIGH"
+    ]
+  },
+  {
+    "No": 19,
+    "Item": "",
+    "Commands": [
+      "factory-proto3 SetPWMLed NLP_B HIGH"
+    ]
+  },
+  {
+    "No": 20,
+    "Item": "turn on HF LED test",
+    "Commands": [
+      "factory-proto3 SetLed HF_R ON"
+    ]
+  },
+  {
+    "No": 21,
+    "Item": "",
+    "Commands": [
+      "factory-proto3 SetLed HF_G ON"
+    ]
+  },
+  {
+    "No": 22,
+    "Item": "",
+    "Commands": [
+      "factory-proto3 SetLed HF_B ON"
+    ]
+  },
+  {
+    "No": 23,
+    "Item": "turn on HE LED test",
+    "Commands": [
+      "factory-proto3 SetLed HE_R ON"
+    ]
+  },
+  {
+    "No": 24,
+    "Item": "",
+    "Commands": [
+      "factory-proto3 SetLed HE_G ON"
+    ]
+  },
+  {
+    "No": 25,
+    "Item": "",
+    "Commands": [
+      "factory-proto3 SetLed HE_B ON"
+    ]
+  },
+  {
+    "No": 26,
+    "Item": "turn on CAP LED test",
+    "Commands": [
+      "factory-proto3 SetMuteLED CAP_R ON"
+    ]
+  },
+  {
+    "No": 27,
+    "Item": "",
+    "Commands": [
+      "factory-proto3 SetMuteLED CAP_G ON"
+    ]
+  },
+  {
+    "No": 28,
+    "Item": "",
+    "Commands": [
+      "factory-proto3 SetMuteLED CAP_ALL ON"
+    ]
+  },
+  {
+    "No": 29,
+    "Item": "LED ICON MISSING TEST",
+    "Commands": [
+      "factory-proto3 SetPWMLed NLP_R HIGH"
+    ]
+  },
+  {
+    "No": 30,
+    "Item": "",
+    "Commands": [
+      "factory-proto3 SetLed HF_R ON"
+    ]
+  },
+  {
+    "No": 31,
+    "Item": "",
+    "Commands": [
+      "factory-proto3 SetLed HE_R ON"
+    ]
+  },
+  {
+    "No": 32,
+    "Item": "",
+    "Commands": [
+      "factory-proto3 SetMuteLED CAP_R ON"
+    ]
+  }
+]
