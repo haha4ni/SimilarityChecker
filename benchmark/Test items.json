@@ -129,6 +129,9 @@
     "Item": "",
     "Commands": [
       "factory-proto3 SetPWMLed NLP_R HIGH"
+    ],
+    "RoiRects": [
+      {"x": 910, "y": 220, "w": 100, "h": 100}
     ]
   },
   {

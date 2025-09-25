@@ -74,7 +74,9 @@ class RoiHelper:
         while True:
             roi = cv2.selectROI("Select ROI", clone, fromCenter=False, showCrosshair=False)
             if roi[2] == 0 or roi[3] == 0:
+                print("[INFO] ROI selection canceled.")
                 break
+            print("[INFO] ROI selection confirmed.")
             x, y, w, h = roi
             roi_pass, kp_count, desc_count = pattern_findner.check_pattern_acceptablility(clone[y:y+h, x:x+w])
             if roi_pass:
@@ -139,6 +141,11 @@ class RoiHelper:
         self.logger.info("Camera ready, press SPACE to capture for ROI selection")
 
         while True:
+            # 檢查視窗是否被關閉
+            if cv2.getWindowProperty(window_name, cv2.WND_PROP_VISIBLE) < 1:
+                self.logger.info("ROI window closed by user (X button)")
+                break
+
             ret, frame = cap.read()
             if not ret:
                 continue
@@ -195,7 +202,7 @@ class RoiHelper:
                 else:
                     self.logger.warning("Failed to switch to Auto Focus")
 
-    def use_roi(self, device_sn, test_time, roi_data, score_func, score_threshold, find_pattern, is_debug) -> Tuple[str, np.ndarray]:
+    def use_roi(self, device_sn, test_time, roi_data, score_func, score_threshold, find_pattern, is_debug, ref_image=None) -> Tuple[str, np.ndarray]:
         # Show loading animation (if GIF file exists)
         loading_thread = None
         if os.path.exists("./assets/loading.gif"):
@@ -213,7 +220,11 @@ class RoiHelper:
         if not cap:
             exit(-1)
 
-        ref_img = cv2.imread("assets/ref_img.bmp")
+        # 參考圖優先用 ref_image 傳入，否則讀 assets/ref_img.bmp
+        if ref_image is not None:
+            ref_img = ref_image
+        else:
+            ref_img = cv2.imread("assets/ref_img.bmp")
         if ref_img is None:
             self.logger.error("Cannot load reference image assets/ref_img.bmp")
             return
@@ -265,6 +276,10 @@ class RoiHelper:
                     x, y, w, h = detected_rois[i]
 
                 test_roi = test_img[y:y+h, x:x+w]
+
+                # 顯示 ROI 及比對用的 ROI 圖片
+                cv2.imshow(f"Test ROI {i}", test_roi)
+                cv2.imshow(f"Ref ROI {i}", ref_roi)
 
                 if self.SIMILARITY_CHECKER_LIVE_NAME in self.caller_info:
                     score = score_func(ref_roi, test_roi)
@@ -319,9 +334,9 @@ class RoiHelper:
                                       (0, 255, 0) if result == "PASS" else (0, 0, 255), (0, 0, 0), 2)
             cv2.imshow("Live CheckMonitor", overlay)
 
-            if result == "PASS" and not is_debug:
-                final_result = "PASS"
-                break
+            # if result == "PASS" and not is_debug:
+            #     final_result = "PASS"
+            #     break
 
             key = cv2.waitKey(1) & 0xFF
 

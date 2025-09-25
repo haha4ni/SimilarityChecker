@@ -1,0 +1,21 @@
+{
+  "frame_width": 1920.0,
+  "frame_height": 1080.0,
+  "fps": 30.0,
+  "fourcc": "MJPG",
+  "auto_exposure": 0.25,
+  "exposure": -6.0,
+  "brightness": 0.0,
+  "contrast": 0.0,
+  "saturation": 64.0,
+  "hue": 0.0,
+  "gamma": 100.0,
+  "auto_white_balance": 0,
+  "white_balance_temp": -1.0,
+  "autofocus": 0,
+  "focus": -1.0,
+  "gain": 1.0,
+  "sharpness": 2.0,
+  "backlight": 3.0,
+  "saved_at": "2025-09-18 10:49:42"
+}
